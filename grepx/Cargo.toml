@@ -1,0 +1,33 @@
+[package]
+name = "grepx"
+version = "0.1.0"
+edition = "2021"
+authors = ["GrepX Contributors"]
+description = "A distributed, multi-threaded regex search engine"
+license = "MIT"
+repository = "https://github.com/yourusername/grepx"
+
+[dependencies]
+# CLI argument parsing
+clap = { version = "4.5.1", features = ["derive"] }
+# Regex matching
+regex = "1.10.3"
+# Parallel processing
+rayon = "1.8.1"
+# Asynchronous operations
+tokio = { version = "1.36.0", features = ["full"] }
+# File traversal
+walkdir = "2.4.0"
+# Terminal UI
+crossterm = "0.27.0"
+# Error handling
+anyhow = "1.0.79"
+# Logging
+log = "0.4.20"
+env_logger = "0.10.2"
+# Progress bars
+indicatif = "0.17.8"
+# SIMD acceleration 
+memchr = "2.7.1"
+# Memory mapping
+memmap2 = "0.9.4"
